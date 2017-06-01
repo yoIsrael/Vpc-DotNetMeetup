@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VPCXamarinTraining.Pages.SoccerTeams"
+             Title="Soccer Teams">
+    <ListView
+        ItemsSource="{Binding TeamsList, Mode=TwoWay}"
+        SelectedItem="{Binding TeamSelected, Mode=TwoWay}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ImageCell
+                    Text="{Binding Name, Mode=OneWay}"
+                    Detail="{Binding Detail, Mode=OneWay}"
+                    ImageSource="{Binding ImageUrl, Mode=OneWay}">
+                </ImageCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:VPCXamarinTraining"
+             x:Class="VPCXamarinTraining.MainPage"
+             Title="VPC Training">
+
+    <StackLayout
+        Margin="5">
+        <Button
+            Text="Calculadora Simple"
+            x:Name="btnCalculatorSimple"
+            Clicked="btnCalculatorSimple_Clicked"
+            Margin="5"></Button>
+
+        <Button
+            Text="Calculadora Reloaded"
+            x:Name="btnCalculatorReloaded"
+            Clicked="btnCalculatorReloaded_Clicked"
+            Margin="5"></Button>
+
+        <Button
+            Text="Equipos de Fútbol"
+            x:Name="btnSoccerTeams"
+            Clicked="btnSoccerTeams_Clicked"
+            Margin="5"></Button>
+    </StackLayout>
+</ContentPage>

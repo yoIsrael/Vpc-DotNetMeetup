@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VPCXamarinTraining.Pages.CalculatorSimple"
+             Title="Calculator Simple">
+
+    <StackLayout Margin="10">
+        <Label 
+            Text="Calculadora"
+            FontSize="Large"
+            HorizontalTextAlignment="Center"></Label>
+        <Label
+            Text="1er Número"></Label>
+        <Entry
+            x:Name="txtFirstNumber"
+            Placeholder="Ingrese Número"
+            Keyboard="Numeric"></Entry>
+        <Label
+            Text="1er Número"></Label>
+        <Entry
+            x:Name="txtSecondNumber"
+            Placeholder="Ingrese Número"
+            Keyboard="Numeric"></Entry>
+        <StackLayout
+            Orientation="Horizontal">
+            <Button
+                x:Name="btnAddition"
+                Text="Suma" 
+                Margin="5"
+                Clicked="btnAddition_Clicked"></Button>
+            <Button
+                x:Name="btnSubtraction"
+                Text="Resta" 
+                Margin="5"
+                Clicked="btnSubtraction_Clicked"></Button>
+        </StackLayout>
+        <StackLayout
+            Orientation="Horizontal">
+            <Button
+                x:Name="btnMultiplication"
+                Text="Multiplicación" 
+                Margin="5"
+                Clicked="btnMultiplication_Clicked"></Button>
+            <Button
+                x:Name="btnDivision"
+                Text="Division" 
+                Margin="5"
+                Clicked="btnDivision_Clicked"></Button>
+        </StackLayout>
+        <Label
+            Text="Resultado"></Label>
+        <Entry
+            x:Name="txtResult"></Entry>
+    </StackLayout>
+
+</ContentPage>
