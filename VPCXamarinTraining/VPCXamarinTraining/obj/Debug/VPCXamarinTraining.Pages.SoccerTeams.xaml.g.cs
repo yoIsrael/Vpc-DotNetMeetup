@@ -11,8 +11,8 @@
 namespace VPCXamarinTraining.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("c:\\users\\luis ramirez\\documents\\visual studio 2017\\Projects\\VPCXamarinTraining\\VP" +
-        "CXamarinTraining\\VPCXamarinTraining\\Pages\\SoccerTeams.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Luis Ramirez\\Source\\Repos\\Vpc-DotNetMeetup\\VPCXamarinTraining\\VPCXamarin" +
+        "Training\\Pages\\SoccerTeams.xaml")]
     public partial class SoccerTeams : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

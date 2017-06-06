@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VPCXamarinTraining.Pages.TeamSelected"
+             Title="Equipo Seleccionado">
+    <StackLayout 
+        Margin="5">
+        <Label
+            Text="{Binding Name, Mode=OneWay}"
+            Margin="5"
+            FontSize="Large"
+            FontAttributes="Bold">
+        </Label>
+        <Image
+            Source="{Binding ImageUrl, Mode=OneWay}"
+            Margin="5"
+            HeightRequest="90"
+            Aspect="AspectFit">
+        </Image>
+        <ScrollView>
+            <Label
+            Text="{Binding Description, Mode=OneWay}"
+            Margin="5">
+            </Label>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

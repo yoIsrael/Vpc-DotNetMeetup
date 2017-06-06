@@ -22272,16 +22272,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luis Ramirez\\documents\\visual studio 2017\\Projects\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining.UWP\\VPCXamarinTraining.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Luis Ramirez\\Source\\Repos\\Vpc-DotNetMeetup\\VPCXamarinTraining\\VPCXamarinTraining.UWP\\VPCXamarinTraining.UWP.csproj",
       "projectName": "VPCXamarinTraining.UWP",
-      "projectPath": "C:\\Users\\Luis Ramirez\\documents\\visual studio 2017\\Projects\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining.UWP\\VPCXamarinTraining.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\Luis Ramirez\\documents\\visual studio 2017\\Projects\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining.UWP\\project.json",
+      "projectPath": "C:\\Users\\Luis Ramirez\\Source\\Repos\\Vpc-DotNetMeetup\\VPCXamarinTraining\\VPCXamarinTraining.UWP\\VPCXamarinTraining.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\Luis Ramirez\\Source\\Repos\\Vpc-DotNetMeetup\\VPCXamarinTraining\\VPCXamarinTraining.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\Luis Ramirez\\documents\\visual studio 2017\\Projects\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining.csproj": {
-              "projectPath": "C:\\Users\\Luis Ramirez\\documents\\visual studio 2017\\Projects\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining.csproj"
+            "C:\\Users\\Luis Ramirez\\Source\\Repos\\Vpc-DotNetMeetup\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining.csproj": {
+              "projectPath": "C:\\Users\\Luis Ramirez\\Source\\Repos\\Vpc-DotNetMeetup\\VPCXamarinTraining\\VPCXamarinTraining\\VPCXamarinTraining.csproj"
             }
           }
         }

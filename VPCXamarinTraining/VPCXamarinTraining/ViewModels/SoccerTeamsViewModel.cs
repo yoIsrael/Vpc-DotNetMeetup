@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using VPCXamarinTraining.DTO;
 using VPCXamarinTraining.ViewModels.Base;
+using Xamarin.Forms;
 
 namespace VPCXamarinTraining.ViewModels
 {
@@ -12,6 +13,8 @@ namespace VPCXamarinTraining.ViewModels
         private ObservableCollection<SoccerTeamDTO> teamsList;
 
         private SoccerTeamDTO teamSelected;
+
+        private INavigation _navigation;
 
         #endregion
 
@@ -36,6 +39,7 @@ namespace VPCXamarinTraining.ViewModels
                 {
                     teamSelected = value;
                     OnPropertyChanged();
+                    _navigation.PushAsync(new Pages.TeamSelected(teamSelected));
                 }
             }
         }
@@ -44,8 +48,9 @@ namespace VPCXamarinTraining.ViewModels
 
         #region Constructor
 
-        public SoccerTeamsViewModel()
+        public SoccerTeamsViewModel(INavigation Navigation)
         {
+            _navigation = Navigation;
             TeamsList = new ObservableCollection<SoccerTeamDTO>();
 
             LoadTeams();

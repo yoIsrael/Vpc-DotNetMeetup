@@ -25,3 +25,31 @@ c:\users\luis ramirez\documents\visual studio 2017\Projects\VPCXamarinTraining\V
 c:\users\luis ramirez\documents\visual studio 2017\Projects\VPCXamarinTraining\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.dll
 c:\users\luis ramirez\documents\visual studio 2017\Projects\VPCXamarinTraining\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.pdb
 C:\Users\Luis Ramirez\documents\visual studio 2017\Projects\VPCXamarinTraining\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.csprojResolveAssemblyReference.cache
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\VPCXamarinTraining.dll
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\VPCXamarinTraining.pdb
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.csprojResolveAssemblyReference.cache
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.MainPage.xaml.g.cs
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.App.xaml.g.cs
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.Pages.CalculatorSimple.xaml.g.cs
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.Pages.CalculatorReloaded.xaml.g.cs
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.Pages.SoccerTeams.xaml.g.cs
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.dll
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.pdb
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\obj\Debug\VPCXamarinTraining.Pages.TeamSelected.xaml.g.cs
