@@ -42,10 +42,10 @@
                 Style="{StaticResource darkerButton}"
                 Command="{Binding OperatorPressedCommand}"
                 CommandParameter="%" />
-        <Button Grid.Row="2" Grid.Column="3" Text = "div" 
+        <Button Grid.Row="2" Grid.Column="3" Text = "/" 
                 Style="{StaticResource orangeButton}"
                 Command="{Binding OperatorPressedCommand}"
-                CommandParameter="div" />
+                CommandParameter="/" />
         <Button Grid.Row="3" Grid.Column="0" Text = "7"
                 Style="{StaticResource plainButton}"
                 Command="{Binding NumberPressCommand}"
@@ -58,10 +58,10 @@
                 Style="{StaticResource plainButton}"
                 Command="{Binding NumberPressCommand}"
                 CommandParameter="9" />
-        <Button Grid.Row="3" Grid.Column="3" Text = "X"
+        <Button Grid.Row="3" Grid.Column="3" Text = "*"
                 Style="{StaticResource orangeButton}"
                 Command="{Binding OperatorPressedCommand}"
-                CommandParameter="X" />
+                CommandParameter="*" />
         <Button Grid.Row="4" Grid.Column="0" Text = "4" 
                 Style="{StaticResource plainButton}"
                 Command="{Binding NumberPressCommand}"
@@ -96,7 +96,7 @@
                 CommandParameter="+" />
         <Button Grid.Row="6" Grid.Column="0" Text = "0" Grid.ColumnSpan="2"
                 Style="{StaticResource plainButton}"
-                Command="{Binding ButtonPressCommand}"
+                Command="{Binding NumberPressCommand}"
                 CommandParameter="0" />
         <Button Grid.Row="6" Grid.Column="2" Text = "." 
                 Style="{StaticResource plainButton}"
@@ -104,8 +104,7 @@
                 CommandParameter="." />
         <Button Grid.Row="6" Grid.Column="3" Text = "=" 
                 Style="{StaticResource orangeButton}"
-                Command="{Binding ResultPressCommand}"
-                CommandParameter="=" />
+                Command="{Binding ResultPressCommand}" />
     </Grid>
 
 </ContentPage>

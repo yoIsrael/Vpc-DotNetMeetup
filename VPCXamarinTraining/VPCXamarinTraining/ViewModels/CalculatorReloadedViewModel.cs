@@ -1,11 +1,9 @@
 ﻿using GalaSoft.MvvmLight.Command;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using VPCXamarinTraining.ViewModels.Base;
+using Xamarin.Forms;
 
 namespace VPCXamarinTraining.ViewModels
 {
@@ -21,13 +19,13 @@ namespace VPCXamarinTraining.ViewModels
 
         private string fullOperation;
 
-        private string[] numbers = new string[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "0" };
-
         private string[] basicOperators = new string[] { "+", "-", "*", "/" };
 
         private Operation currentOperation;
 
         private State currentState;
+
+        private readonly ContentPage page;
 
         #endregion
 
@@ -76,33 +74,27 @@ namespace VPCXamarinTraining.ViewModels
             }
         }
 
-
         #endregion
 
         #region Contructor
 
-        public CalculatorReloadedViewModel()
+        public CalculatorReloadedViewModel(ContentPage page)
         {
             ClearValues();
+            this.page = page;
         }
 
         #endregion
 
         #region Commands
 
-        //public ICommand AdditionCommand => new RelayCommand(Addition);
-
-        //public ICommand SubtractionCommand => new RelayCommand(Subtraction);
-
-        //public ICommand MultiplicationCommand => new RelayCommand(Multiplication);
-
-        //public ICommand DivisionCommand => new RelayCommand(Division);
-
         public ICommand ButtonPressCommand => new RelayCommand<string>(ButtonPress);
 
         public ICommand OperatorPressedCommand => new RelayCommand<string>(OperatorPressed);
 
         public ICommand NumberPressCommand => new RelayCommand<string>(NumberPress);
+
+        public ICommand ResultPressCommand => new RelayCommand(ResultPress);
 
         #endregion
 
@@ -142,16 +134,24 @@ namespace VPCXamarinTraining.ViewModels
 
         private void OperatorPressed(string parameter)
         {
-            if (currentState == State.FirstNumber )
+            if (currentState == State.FirstNumber)
             {
                 currentState = State.Operator;
-                FullOperation = string.Concat(FullOperation,FirstNumber);
+                FullOperation = string.Concat(FullOperation, FirstNumber);
             }
             else if (currentState == State.SecondNumber)
             {
-                currentState = State.Result;
-                FullOperation = string.Concat(FullOperation, SecondNumber);
+                FirstNumber = Calculate();
+                SecondNumber = 0;
+                Result = string.Empty;
+                FullOperation = string.Concat(string.Empty, FirstNumber);
             }
+
+            if (basicOperators.Contains(fullOperation.Substring(fullOperation.Length - 1, 1)))
+            {
+                fullOperation = fullOperation.Remove(fullOperation.Length - 1, 1);
+            }
+
             switch (parameter)
             {
                 case "+":
@@ -174,7 +174,6 @@ namespace VPCXamarinTraining.ViewModels
                     currentOperation = Operation.None;
                     break;
             }
-            
         }
 
         private void NumberPress(string parameter)
@@ -194,7 +193,40 @@ namespace VPCXamarinTraining.ViewModels
                 SecondNumber = double.Parse(SecondNumber.ToString() + parameter);
                 Result = SecondNumber.ToString();
             }
-            //FullOperation = string.Concat(FullOperation, parameter);
+        }
+
+        private void ResultPress()
+        {
+            FullOperation = string.Concat(FullOperation, SecondNumber);
+
+            Result = Calculate().ToString();
+        }
+
+        private double Calculate()
+        {
+            double result = 0;
+            switch (currentOperation)
+            {
+                case Operation.Add:
+                    result = FirstNumber + SecondNumber;
+                    break;
+                case Operation.Substract:
+                    result = FirstNumber - SecondNumber;
+                    break;
+                case Operation.Product:
+                    result = FirstNumber * SecondNumber;
+                    break;
+                case Operation.Division:
+                    if (SecondNumber != 0)
+                    {
+                        result = FirstNumber / SecondNumber;
+                    }
+                    break;
+                default:
+                    result = 0;
+                    break;
+            }
+            return result;
         }
 
         #endregion

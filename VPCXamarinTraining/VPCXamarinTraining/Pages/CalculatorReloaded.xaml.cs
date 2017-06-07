@@ -17,7 +17,7 @@ namespace VPCXamarinTraining.Pages
         public CalculatorReloaded()
         {
             InitializeComponent();
-            BindingContext = new CalculatorReloadedViewModel();
+            BindingContext = new CalculatorReloadedViewModel(this);
         }
 
         #endregion
