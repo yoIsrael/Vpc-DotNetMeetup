@@ -11,8 +11,8 @@
 namespace VPCXamarinTraining {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("c:\\users\\luis ramirez\\documents\\visual studio 2017\\Projects\\VPCXamarinTraining\\VP" +
-        "CXamarinTraining\\VPCXamarinTraining\\App.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Luis Ramirez\\Source\\Repos\\Vpc-DotNetMeetup\\VPCXamarinTraining\\VPCXamarin" +
+        "Training\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

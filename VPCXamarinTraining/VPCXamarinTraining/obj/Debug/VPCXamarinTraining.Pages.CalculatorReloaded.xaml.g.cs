@@ -11,8 +11,8 @@
 namespace VPCXamarinTraining.Pages {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("c:\\users\\luis ramirez\\documents\\visual studio 2017\\Projects\\VPCXamarinTraining\\VP" +
-        "CXamarinTraining\\VPCXamarinTraining\\Pages\\CalculatorReloaded.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\Luis Ramirez\\Source\\Repos\\Vpc-DotNetMeetup\\VPCXamarinTraining\\VPCXamarin" +
+        "Training\\Pages\\CalculatorReloaded.xaml")]
     public partial class CalculatorReloaded : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

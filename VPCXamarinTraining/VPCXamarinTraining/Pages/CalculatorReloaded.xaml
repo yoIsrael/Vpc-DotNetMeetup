@@ -4,49 +4,108 @@
              x:Class="VPCXamarinTraining.Pages.CalculatorReloaded"
              Title="Calculator Reloaded">
 
-    <StackLayout Margin="10">
-        <Label 
-            Text="Calculadora"
-            FontSize="Large"
-            HorizontalTextAlignment="Center"></Label>
-        <Label
-            Text="1er Número"></Label>
-        <Entry
-            Placeholder="Ingrese Número"
-            Keyboard="Numeric"
-            Text="{Binding FirstNumber, Mode=TwoWay}"></Entry>
-        <Label
-            Text="1er Número"></Label>
-        <Entry
-            Placeholder="Ingrese Número"
-            Keyboard="Numeric"
-            Text="{Binding SecondNumber, Mode=TwoWay}"></Entry>
-        <StackLayout
-            Orientation="Horizontal">
-            <Button
-                Text="Suma" 
-                Margin="5"
-                Command="{Binding AdditionCommand}"></Button>
-            <Button
-                Text="Resta" 
-                Margin="5"
-                Command="{Binding SubtractionCommand}"></Button>
-        </StackLayout>
-        <StackLayout
-            Orientation="Horizontal">
-            <Button
-                Text="Multiplicación" 
-                Margin="5"
-                Command="{Binding MultiplicationCommand}"></Button>
-            <Button
-                Text="Division" 
-                Margin="5"
-                Command="{Binding DivisionCommand}"></Button>
-        </StackLayout>
-        <Label
-            Text="Resultado"></Label>
-        <Entry
-            Text="{Binding Result, Mode=TwoWay}"></Entry>
-    </StackLayout>
+
+    <Grid RowSpacing=".5"  ColumnSpacing=".5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+               HorizontalTextAlignment="End" VerticalTextAlignment="End" 
+               FontSize="30" 
+               Text="{Binding FullOperation, Mode=OneWay}"/>
+        <Label Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4"
+               HorizontalTextAlignment="End" VerticalTextAlignment="End" 
+               FontSize="60" 
+               Text="{Binding Result, Mode=OneWay}"/>
+        <Button Grid.Row="2" Grid.Column="0" Text = "C" 
+                Style="{StaticResource darkerButton}"
+                Command="{Binding ButtonPressCommand}"
+                CommandParameter="C" />
+        <Button Grid.Row="2" Grid.Column="1" Text = "+/-" 
+                Style="{StaticResource darkerButton}" 
+                Command="{Binding ButtonPressCommand}"
+                CommandParameter="+/-" />
+        <Button Grid.Row="2" Grid.Column="2" Text = "%" 
+                Style="{StaticResource darkerButton}"
+                Command="{Binding OperatorPressedCommand}"
+                CommandParameter="%" />
+        <Button Grid.Row="2" Grid.Column="3" Text = "div" 
+                Style="{StaticResource orangeButton}"
+                Command="{Binding OperatorPressedCommand}"
+                CommandParameter="div" />
+        <Button Grid.Row="3" Grid.Column="0" Text = "7"
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="7" />
+        <Button Grid.Row="3" Grid.Column="1" Text = "8" 
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="8" />
+        <Button Grid.Row="3" Grid.Column="2" Text = "9" 
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="9" />
+        <Button Grid.Row="3" Grid.Column="3" Text = "X"
+                Style="{StaticResource orangeButton}"
+                Command="{Binding OperatorPressedCommand}"
+                CommandParameter="X" />
+        <Button Grid.Row="4" Grid.Column="0" Text = "4" 
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="4" />
+        <Button Grid.Row="4" Grid.Column="1" Text = "5" 
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="5" />
+        <Button Grid.Row="4" Grid.Column="2" Text = "6" 
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="5" />
+        <Button Grid.Row="4" Grid.Column="3" Text = "-" 
+                Style="{StaticResource orangeButton}"
+                Command="{Binding OperatorPressedCommand}"
+                CommandParameter="-" />
+        <Button Grid.Row="5" Grid.Column="0" Text = "1" 
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="1" />
+        <Button Grid.Row="5" Grid.Column="1" Text = "2"
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="2" />
+        <Button Grid.Row="5" Grid.Column="2" Text = "3" 
+                Style="{StaticResource plainButton}"
+                Command="{Binding NumberPressCommand}"
+                CommandParameter="3" />
+        <Button Grid.Row="5" Grid.Column="3" Text = "+" 
+                Style="{StaticResource orangeButton}"
+                Command="{Binding OperatorPressedCommand}"
+                CommandParameter="+" />
+        <Button Grid.Row="6" Grid.Column="0" Text = "0" Grid.ColumnSpan="2"
+                Style="{StaticResource plainButton}"
+                Command="{Binding ButtonPressCommand}"
+                CommandParameter="0" />
+        <Button Grid.Row="6" Grid.Column="2" Text = "." 
+                Style="{StaticResource plainButton}"
+                Command="{Binding ButtonPressCommand}"
+                CommandParameter="." />
+        <Button Grid.Row="6" Grid.Column="3" Text = "=" 
+                Style="{StaticResource orangeButton}"
+                Command="{Binding ResultPressCommand}"
+                CommandParameter="=" />
+    </Grid>
 
 </ContentPage>
