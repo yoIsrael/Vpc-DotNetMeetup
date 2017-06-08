@@ -25,8 +25,6 @@ namespace VPCXamarinTraining.ViewModels
 
         private State currentState;
 
-        private readonly ContentPage page;
-
         #endregion
 
         #region Properties
@@ -78,10 +76,9 @@ namespace VPCXamarinTraining.ViewModels
 
         #region Contructor
 
-        public CalculatorReloadedViewModel(ContentPage page)
+        public CalculatorReloadedViewModel()
         {
             ClearValues();
-            this.page = page;
         }
 
         #endregion

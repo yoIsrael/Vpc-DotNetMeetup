@@ -1,0 +1,2 @@
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining.UWP\VPCXamarinTraining.UWP.csproj;x86
+C:\Users\Luis Ramirez\Source\Repos\Vpc-DotNetMeetup\VPCXamarinTraining\VPCXamarinTraining\VPCXamarinTraining.csproj;neutral
