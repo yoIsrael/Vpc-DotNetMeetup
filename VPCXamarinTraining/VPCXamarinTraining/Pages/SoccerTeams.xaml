@@ -3,17 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VPCXamarinTraining.Pages.SoccerTeams"
              Title="Soccer Teams">
-    <ListView
+    <ScrollView>
+        <ListView
         ItemsSource="{Binding TeamsList, Mode=TwoWay}"
         SelectedItem="{Binding TeamSelected, Mode=TwoWay}">
-        <ListView.ItemTemplate>
-            <DataTemplate>
-                <ImageCell
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell
                     Text="{Binding Name, Mode=OneWay}"
                     Detail="{Binding Detail, Mode=OneWay}"
                     ImageSource="{Binding ImageUrl, Mode=OneWay}">
-                </ImageCell>
-            </DataTemplate>
-        </ListView.ItemTemplate>
-    </ListView>
+                    </ImageCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ScrollView>
 </ContentPage>
